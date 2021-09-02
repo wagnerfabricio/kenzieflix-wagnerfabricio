@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
     <header>
         <div class="container">
-            <div class="flex">
+            <div>
                 <div class="flex-column">
                     <a href="#" class="logo">
                         <figure>
-                            <img src="" alt="Logo netflix">
+                            <img src="assets/img/logo.svg" alt="Logo netflix">
                             <figcaption class="hidden">Logo netflix</figcaption>
                         </figure>
                     </a>
                 </div>
                 <div class="flex-column">
-                    <nav>
-                        <span class="abrir-submenu mobile-element">Navegar</span>
+                    <nav class="header__nav">
+                        <span class="abrir-submenu mobile-element">Navegar</span> <span><i
+                                class="fas fa-caret-down"></i></span>
                         <ul>
                             <li class="item-ativo"><a href="#">Início</a></li>
                             <li><a href="#">Séries</a></li>
@@ -30,22 +40,22 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="flex-column">
+                <div class="flex-column user-menu">
                     <div class="menu-usuario">
-                        <span class="pesquisar"><img src="" alt="Ícone pesquisar"></span>
-                        <span class="usuario"><img src="" alt="Ícone usuário"></span>
+                        <span class="pesquisar"><img src="assets/img/search.svg" alt="Ícone pesquisar"></span>
+                        <span class="usuario"><img src="assets/img/user.png" alt="Ícone usuário"></span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    
+
     <main class="pagina-inicial">
         <section class="secao-destaque">
             <div class="container">
                 <article class="secao-destaque-conteudo">
                     <figure>
-                        <img src="" alt="Título seção destaque">
+                        <img src="assets/img/movies/gg.jpg" alt="Título seção destaque">
                         <figcaption class="hidden">Título seção destaque</figcaption>
                     </figure>
                     <p>Ela o amava e queria acreditar nele. Mas a verdade era monstruosa demais para ser ignorada.</p>
@@ -63,48 +73,48 @@
                     <li class="flex-column">
                         <a href="#">
                             <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
+                                <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                <figcaption class="hidden">Amigas para sempre</figcaption>
                             </figure>
                         </a>
                     </li>
                     <li class="flex-column">
                         <a href="#">
                             <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
+                                <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                <figcaption class="hidden">Gilmore girls</figcaption>
                             </figure>
                         </a>
                     </li>
                     <li class="flex-column">
                         <a href="#">
                             <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
+                                <img class="teste" src="assets/img/movies/good.webp" alt="The Good Place">
+                                <figcaption class="hidden">The Good Place</figcaption>
                             </figure>
                         </a>
                     </li>
                     <li class="flex-column">
                         <a href="#">
                             <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
+                                <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                <figcaption class="hidden">La Casa de Papel</figcaption>
                             </figure>
                         </a>
                     </li>
                     <li class="flex-column">
                         <a href="#">
                             <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
+                                <img src="assets/img/movies/papel2.webp" alt="La casa de papel 2">
+                                <figcaption class="hidden">La casa de papel 2</figcaption>
                             </figure>
                         </a>
                     </li>
                     <li class="flex-column">
                         <a href="#">
                             <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
+                                <img src="assets/img/movies/tedlogo.webp" alt="Ted Bundy">
+                                <figcaption class="hidden">Ted Bundy</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -305,4 +315,5 @@
         </div>
     </footer>
 </body>
+
 </html>
