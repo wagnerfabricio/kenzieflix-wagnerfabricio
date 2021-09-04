@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
@@ -24,80 +23,441 @@ family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
 
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* FONTS */
+/* ------------------------ FONTS ----------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
 
-/* VARIÁVEIS */
-:root{}
-  
-/* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    list-style: none;
+/* ---------------------- VARIÁVEIS --------------------- */
+:root {
+  --text-font: "Lato", sans-serif;
+  --menu-font: "Montserrat", sans-serif;
+  --background-body: #141414;
+  --light-grey-color: #e5e5e5;
+  --middle-grey-color: #b3b3b3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --border-radius: 8px;
 }
-img{
-    max-width: 800px;
-}
-div.flex{
-    display: flex;
-}
-div.full-container{
-    width: 100%;
-    max-width: 1850px;
-    margin:0 auto;
-}
-div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
-}
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
-}
-/* GERAL */
-  
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
 
-/* INICIAL */
-main{}
-/* INICIAL */
+/* ----------------------- GERAIS ----------------------- */
+html {
+  font-size: 62.5%;
+}
 
-/* EXTRAS */
+figcaption {
+  display: none;
+}
 
+body div.container {
+  max-width: 1735px;
+  margin: 0 auto;
+}
+
+/* ------------------------ BODY ------------------------ */
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+  font-family: var(--text-font);
+  background-color: var(--background-body);
+  color: var(--white-color);
+}
+
+/* ----------------------- HEADER ----------------------- */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.header__left-elements,
+.header__right-elements {
+  display: flex;
+  align-items: center;
+}
+
+.header__left-elements img[alt*="Netflix"] {
+  width: 7rem;
+  margin-right: 5vw;
+}
+
+.header__right-elements a:hover {
+  transition: all 0.25s;
+  opacity: 0.8;
+}
+
+.header__right-elements__user-image img {
+  width: 2.8rem;
+  border-radius: var(--border-radius);
+}
+
+.header__right-elements--desktop i[class*="search"] {
+  display: none;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.header__nav {
+  font-size: 1.4rem;
+  color: var(--light-grey-color);
+  display: flex;
+}
+
+.header__nav__title--mobile {
+  cursor: pointer;
+}
+
+.header__nav__title--mobile:hover {
+  color: var(--middle-grey-color);
+}
+
+.header__nav ul {
+  display: none;
+}
+
+.header__nav li {
+  margin-right: 1rem;
+}
+
+.header__nav li:first-child {
+  font-weight: 900;
+}
+
+.header__nav a:any-link {
+  color: var(--light-grey-color);
+  font-family: var(--menu-font);
+}
+
+.header__nav a:hover {
+  color: var(--middle-grey-color);
+}
+
+/* ----------------------- FOOTER ----------------------- */
+
+footer,
+footer a:any-link {
+  color: grey;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+footer a:hover {
+  border-bottom: 1px solid grey;
+}
+
+footer img {
+  width: 2rem;
+}
+
+.footer__wrap {
+  margin: 8rem 0 2rem;
+  padding: 0 3rem;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 3rem;
+}
+
+.footer__social-media-links li {
+  display: inline-block;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.footer__social-media-links li:hover {
+  opacity: 0.8;
+  transition: all 0.25s;
+}
+
+footer p {
+  font-size: 1.3rem;
+}
+
+footer p span {
+  font-size: 1.1rem;
+}
+
+/* ------------------------ MAIN ------------------------ */
+/* HIGHLIGHT SECTION */
+.highlight-section {
+  background-image: url(../img/movies/amigas.jpg);
+  background-position: left center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70vh;
+}
+
+.highlight-section__wrap {
+  padding: 0 3rem;
+}
+
+.highlight-section h2 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+.highlight-section p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.highlight-section h2,
+.highlight-section p {
+  max-width: 50%;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box; /* (é uma box de informações); */
+  -webkit-line-clamp: 3; /* (seta a qde de linhas) */
+  -webkit-box-orient: vertical; /* (diz a orientação vertical/horizontal)... */
+}
+
+.highlight-section__buttons {
+  display: flex;
+  margin: 1.4rem 0 8rem;
+}
+
+.highlight-section .watch-button {
+  background: var(--white-color);
+  color: var(--black-color);
+  margin-right: 1rem;
+}
+
+.highlight-section .more-info-button {
+  background: rgba(109, 109, 110, 0.7);
+  color: var(--white-color);
+}
+
+.highlight-section .watch-button,
+.highlight-section .more-info-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.highlight-section .watch-button:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.highlight-section .more-info-button:hover {
+  background: rgba(109, 109, 110, 0.4);
+}
+
+.highlight-section button img {
+  display: inline-block;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.linear-background {
+  height: 90px;
+  margin-top: -90px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
+}
+
+/* CATALOG */
+
+.netflix-originals--portrait {
+  display: none;
+}
+
+.catalog .keep-watching {
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0) 0,
+    rgba(20, 20, 20, 0.15) 15%,
+    rgba(20, 20, 20, 0.35) 29%,
+    rgba(20, 20, 20, 0.58) 44%,
+    #141414 68%,
+    #141414 100%
+  );
+}
+
+.catalog {
+  margin-top: -6rem;
+  padding: 0 3rem;
+}
+
+h1.catalog__title {
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin: 1.5rem 0 1rem;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
+ul.catalog__videos {
+  column-count: 2;
+  column-gap: 6px;
+}
+
+li.catalog__videos__element img {
+  border-radius: var(--border-radius);
+  width: 100%;
+  transition: all 0.25s;
+}
+
+li.catalog__videos__element img:hover {
+  opacity: 0.8;
+  transition: all 0.25s;
+}
+
+/* ----------------------- EXTRAS ----------------------- */
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+.catalog__videos::-webkit-scrollbar {
+  display: none;
+}
 
-/* EXTRAS */
-  
+.catalog__videos {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar-button {
+}
+::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track-piece {
+}
+::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-corner {
+}
+::-webkit-resizer {
+}
 
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+/* -------------------- @MEDIA QUERIES ------------------- */
+@media only screen and (min-width: 400px) {
+  header .header__left-elements img[alt*="Netflix"] {
+    width: 9.2rem;
+  }
+
+  .header__right-elements--desktop i[class*="search"] {
+    display: block;
+  }
+
+  .header__right-elements__user-image img {
+    width: 3.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  /* HEADER */
+  .header__container {
+    padding: 2rem 6rem;
+  }
+
+  .header__nav h2 {
+    display: none;
+  }
+
+  .header__nav ul {
+    display: flex;
+  }
+
+  .highlight-section {
+    background-image: url(../img/movies/desktop-background.webp);
+    background-size: cover;
+    object-fit: contain;
+    justify-content: flex-end;
+  }
+  .highlight-section .watch-button,
+  .highlight-section .more-info-button {
+    font-size: 22px;
+  }
+
+  /* HIGHLIGHT SECTION */
+  .highlight-section h2 {
+    font-size: 2.8rem;
+  }
+
+  .highlight-section p {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    max-width: 50%;
+  }
+
+  .highlight-section__wrap {
+    padding: 0 6rem;
+  }
+
+  /* CATALOG SECTION */
+  .netflix-originals {
+    display: none;
+  }
+
+  .netflix-originals--portrait {
+    display: block;
+  }
+
+  .catalog {
+    padding: 0 6rem;
+  }
+
+  h1.catalog__title {
+    font-size: 2.6rem;
+  }
+
+  ul.catalog__videos {
+    column-gap: 0;
+    display: flex;
+    margin-bottom: 3.5rem;
+    overflow-x: scroll;
+  }
+
+  li.catalog__videos__element {
+    flex: 1 0 28.7rem;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    width: 28.7rem;
+  }
+
+  /* FOOTER */
+
+  .footer__wrap {
+    margin: 8rem 20% 2rem;
+    padding: 0;
+    border-top: 1px solid rgb(128 128 128 / 26%);
+  }
+
+  .footer__nav {
+    display: block;
+    padding-top: 2.5rem;
+    float: left;
+  }
+
+  .footer__social-media-links {
+    padding-top: 2.5rem;
+    float: right;
+  }
+
+  .footer p {
+    clear: both;
+    padding-top: 4rem;
+  }
+}
