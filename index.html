@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="Vagner Fabricio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
+    <title>Kenzie - CloneFlix</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -16,23 +18,20 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div>
-                <div class="flex-column">
-                    <a href="#" class="logo">
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__left-elements">
+                    <a href="#">
                         <figure>
-                            <img src="assets/img/logo.svg" alt="Logo netflix">
-                            <figcaption class="hidden">Logo netflix</figcaption>
+                            <img src="assets/img/logo.svg" alt="Netflix logo">
+                            <figcaption>Netflix logo</figcaption>
                         </figure>
                     </a>
-                </div>
-                <div class="flex-column">
                     <nav class="header__nav">
-                        <span class="abrir-submenu mobile-element">Navegar</span> <span><i
-                                class="fas fa-caret-down"></i></span>
+                        <h2 class="header__nav__title--mobile">Navegar <i class="fas fa-caret-down"></i> </h2>
                         <ul>
-                            <li class="item-ativo"><a href="#">Início</a></li>
+                            <li><a class="header__nav__start-item" href="#">Início</a></li>
                             <li><a href="#">Séries</a></li>
                             <li><a href="#">Filmes</a></li>
                             <li><a href="#">Bombando</a></li>
@@ -40,280 +39,347 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="flex-column user-menu">
-                    <div class="menu-usuario">
-                        <span class="pesquisar"><img src="assets/img/search.svg" alt="Ícone pesquisar"></span>
-                        <span class="usuario"><img src="assets/img/user.png" alt="Ícone usuário"></span>
-                    </div>
+                <div class="header__right-elements">
+                    <a href="#">
+                        <figure class="header__right-elements--desktop">
+                            <i class="fas fa-search"></i>
+                            <figcaption>Search icon</figcaption>
+                            </img>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="header__right-elements__user-image">
+                            <img src="assets/img/user.png" alt="User image">
+                            <figcaption>User image</figcaption>
+                            </img>
+                        </figure>
+                    </a>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <main class="pagina-inicial">
-        <section class="secao-destaque">
-            <div class="container">
-                <article class="secao-destaque-conteudo">
-                    <figure>
-                        <img src="assets/img/movies/gg.jpg" alt="Título seção destaque">
-                        <figcaption class="hidden">Título seção destaque</figcaption>
-                    </figure>
-                    <p>Ela o amava e queria acreditar nele. Mas a verdade era monstruosa demais para ser ignorada.</p>
-                    <div class="secao-destaque-buttons">
-                        <button class="assistir">Assistir</button>
-                        <button class="mais-informacoes">Mais informações</button>
+        </header>
+        <main>
+            <section class="highlight-section">
+                <div class="highlight-section__wrap">
+                    <h2>Top 1 no Brasil hoje</h2>
+                    <p>Uma golpista inveterada acha que encontrou a vítima perfeita. Só que seu erro foi mexer com
+                        alguém
+                        tão
+                        cruel
+                        quanto ela.</p>
+                    <div class="highlight-section__buttons">
+                        <button class="watch-button"><img src="assets/img/play-button.svg" alt=""> Assistir</button>
+                        <button class="more-info-button"> <img src="assets/img/information.svg" alt=""> Mais
+                            informações</button>
                     </div>
-                </article>
-            </div>
-        </section>
-        <section class="secao-catalogo" id="secao-continuar-assistindo">
-            <div class="container">
-                <h2 class="secao-catalogo-titulo">Continuar assistindo</h2>
-                <ul class="flex">
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
-                                <figcaption class="hidden">Amigas para sempre</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
-                                <figcaption class="hidden">Gilmore girls</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img class="teste" src="assets/img/movies/good.webp" alt="The Good Place">
-                                <figcaption class="hidden">The Good Place</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
-                                <figcaption class="hidden">La Casa de Papel</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/papel2.webp" alt="La casa de papel 2">
-                                <figcaption class="hidden">La casa de papel 2</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/tedlogo.webp" alt="Ted Bundy">
-                                <figcaption class="hidden">Ted Bundy</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="secao-catalogo" id="secao-minha-lista">
-            <div class="container">
-                <h2 class="secao-catalogo-titulo">Minha lista</h2>
-                <ul class="flex">
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="secao-catalogo" id="secao-originais">
-            <div class="container">
-                <h2 class="secao-catalogo-titulo">Minha lista</h2>
-                <ul class="flex">
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="secao-catalogo" id="secao-originais">
-            <div class="container">
-                <h2 class="secao-catalogo-titulo">Programas para toda a família</h2>
-                <ul class="flex">
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="flex-column">
-                        <a href="#">
-                            <figure>
-                                <img src="assets/img/movies/" alt="Nome programa">
-                                <figcaption class="hidden">Nome programa</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="flex">
-                <div class="flex-column">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Centro de ajuda</a></li>
-                            <li><a href="#">Termos de uso</a></li>
-                            <li><a href="#">Privacidade</a></li>
-                            <li><a href="#">Entre em contato</a></li>
-                        </ul>
-                    </nav>
                 </div>
-                <div class="flex-column">
-                    <ul class="redes-sociais">
-                        <li><a href="#"><img src="" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="" alt="Twitter"></a></li>
+            </section>
+            <div class="linear-background"></div>
+            <section class="catalog">
+                <div class="catalog__list keep-watching">
+                    <h1 class="catalog__title">Continuar assistindo</h1>
+                    <ul class="catalog__videos">
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+                <div class="catalog__list my-list">
+                    <h1 class="catalog__title">Minha lista</h1>
+                    <ul class="catalog__videos">
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__list netflix-originals">
+                    <h1 class="catalog__title">Originais netflix</h1>
+                    <ul class="catalog__videos">
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__list netflix-originals--portrait">
+                    <h1 class="catalog__title">Originais netflix</h1>
+                    <ul class="catalog__videos">
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/portrait_good.webp" alt="The Good Place">
+                                    <figcaption>The Good Place</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/portrait_papel2.webp" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/portrait_good.webp" alt="The Good Place">
+                                    <figcaption>The Good Place</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/portrait_papel2.webp" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/portrait_good.webp" alt="The Good Place">
+                                    <figcaption>The Good Place</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/portrait_papel2.webp" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__list family-friend">
+                    <h1 class="catalog__title">Programas para toda a família</h1>
+                    <ul class="catalog__videos">
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/papel.jpg" alt="La casa de papel">
+                                    <figcaption>La casa de papel</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/gg.jpg" alt="Gilmore girls">
+                                    <figcaption>Gilmore girls: Um Ano para Recordar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="catalog__videos__element">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/movies/amigas.jpg" alt="Amigas para sempre">
+                                    <figcaption>Amigas para sempre</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrap">
+                <ul class="footer__nav">
+                    <li><a href="#">Centro de ajuda</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Entre em contato</a></li>
+                </ul>
+                <ul class="footer__social-media-links">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/facebook-app-logo.svg" alt="facebook logo">
+                                <figcaption>Facebook logo</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/instagram-symbol.svg" alt="instagram logo">
+                                <figcaption>Instagram logo</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="assets/img/twitter.svg" alt="twitter logo">
+                                <figcaption>Twitter logo</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+                <p><span>&#169;</span> 1997-2021 Netflix, Inc. {i-0b45126ef02c196a3-by-Vagner}</p>
             </div>
-            <div class="copyright">
-                <p>&copy; 1997-2021 Netflix, Inc.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
